@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jay Willis</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #1a1a1a;
+      border-bottom: 2px solid #00c896;
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #ffffff;
+      letter-spacing: 2px;
+    }
+
+    header p.tagline {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #00c896;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 40px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      color: #00c896;
+      border-left: 4px solid #00c896;
+      padding-left: 12px;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      line-height: 1.8;
+      color: #c0c0c0;
+      font-size: 1rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 24px;
+      transition: border-color 0.2s;
+    }
+
+    .card:hover {
+      border-color: #00c896;
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #555;
+      font-size: 0.85rem;
+      border-top: 1px solid #1a1a1a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jay Willis</h1>
+    <p class="tagline">Automation Engineer &amp; App Developer</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About</h2>
+      <p>
+        Hello, I am Jay Willis. I specialize in UI and API integrations. Secondarily, I do app development and tooling. I continue to learn everyday in my
+        craft to stay feeling like a beginner.
+      </p>
+    </section>
+
+    <section>
+      <h2>What I Do</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Automation Engineering</h3>
+          <p>UI and API Automation you can trust know there is a bug when it tells you.</p>
+        </div>
+        <div class="card">
+          <h3>Scripting &amp; Tooling</h3>
+          <p>Writing custom scripts and developer tools to accelerate to cut down on time and errors.</p>
+        </div>
+        <div class="card">
+          <h3>Languages</h3>
+          <p>C# & Swift</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Questions, comments or concerns? Please email me at your leisure</p>
+      <p style="margin-top: 12px; display: flex; align-items: center; gap: 10px;">
+        <a href="mailto:willisjeremiah95@gmail.com" style="color: #00c896; text-decoration: none;">Email: willisjeremiah95@gmail.com</a>
+        <button onclick="navigator.clipboard.writeText('willisjeremiah95@gmail.com').then(() => { this.textContent = 'Copied!'; setTimeout(() => this.textContent = 'Copy', 2000); })" style="background: #1a1a1a; border: 1px solid #00c896; color: #00c896; padding: 4px 10px; border-radius: 4px; cursor: pointer; font-size: 0.8rem;">Copy</button>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Jay Willis. All rights reserved.
+  </footer>
+
+</body>
+</html>
